@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<title>Facebook</title>
+	<link href="https://fonts.googleapis.com/css?family=Palanquin+Dark|Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+	<link href="facebook.css" type="text/css" rel="stylesheet">
+	<head>
+		<style>
+			body {margin: 0;
+				background-color: #edf0f5;}
+			.header {
+				position: relative;
+				width: 100%;
+				height: 90px;
+				background-color: #45619d;}
+			.header_child {
+				position: relative;
+				margin: 0 auto;
+				width: 980px;
+				height: 90px;
+				color: #ffffff;}
+			.facebook {
+				width:200px;
+				height: 70px;
+				position: absolute;
+				margin-top: 15px;}
+			a#facebook {
+				text-decoration: none;
+				font-size: 38px;
+				font-family: 'Palanquin Dark', sans-serif;
+				color: #ffffff;}
+			.logindiv {
+				position: absolute;
+				height: 70px;
+				width: 410px;
+				right: 0%;
+				bottom: 0%;}
+			form#log_in {
+				float: right;}
+			.log_in {
+				margin-right: 15px;
+				width: 150px;}
+			label {
+				font-family: 'Poppins:400', sans-serif;
+				font-size: 13px;}
+			label#ps {
+				margin-left: 80px;}
+			a#forgot_account {
+				text-decoration: none;
+				color: #62a2d6;
+				display: inline-block;
+				position: relative;
+				margin-left: 175px;
+				margin-top: 5px;
+				font-family: 'Poppins:400', sans-serif;
+				font-size: 13px;}
+			a#forgot_account:hover {
+				text-decoration: underline;}
+			input#submit {
+				background: #4267b2;
+				color: #ffffff;
+				border: 1px solid #000099;}
+			.main {
+				width: 980px;
+				height: 600px;
+				position: relative;
+				margin: 0 auto;}
+			.introduction {
+				width: 480px;
+				height: 350px;
+				position: absolute;
+				margin-top: 50px;
+				font-family: 'Libre Franklin', sans-serif;}
+			.intro {
+				margin-top: 30px;
+				width: 480px;
+				height: 50px;}
+			div#first {
+				margin-top: 45px;}
+			.intro_text {
+				float: right;}
+			h2 {
+				font-size: 28px;
+				color: #333333;}
+			.bold {
+				font-weight: bold;
+				font-size: 15px;
+				color: #333333;
+				margin-right: 10px;}
+			.normal {
+				font-size: 14px;
+				color: #66666e;}
+			p#first_p {
+				margin-right: 46px;}
+			p#second_p {
+				margin-right: 82px;}
+			div#sign_up_div {
+				width: 420px;
+				height: 550px;
+				position: absolute;
+				right: 0%;
+				top: 0%;
+				font-family: 'Libre Franklin', sans-serif;}
+			h1 span#free {
+				color: #333333;}
+			h1 {
+				margin-bottom: 2px;}
+			.main input {
+				height: 34px;
+				border: 1px solid #99a5c8;
+				border-radius: 5px;
+				font-size: 18px;
+				padding-left: 8px;}			
+			.input_name {
+				width: 194px;
+				margin-top: 28px;}
+			input#last_name {
+				float: right;}
+			.input_mail_pw {
+				width: 410px;
+				margin-top: 14px;}
+			p#birthday {
+				margin-top: 23px;
+				margin-bottom: 11px;}
+			select {
+				border: 1px solid #bdc7d8;
+				height: 30px;
+				padding-left: 7px;}
+			select#month {
+				width: 80px;}
+			select#day {
+				width: 58px;}
+			select#year {
+				width: 68px;}
+			div#link_div {
+				position: relative;
+				float: right;
+				width: 200px;
+				height: 40px;
+				margin-top: -5px;}
+			div#link_div a {
+				text-decoration: none;
+				font-size: 10px;
+				color: #635c9e;}
+			div#link_div a:hover {
+				text-decoration: underline;}
+			input#female {
+				margin-left: 10px;
+				margin-top: 10px;}
+			span#female {
+				position: absolute;
+				margin-top: 21px;
+				margin-left: 5px;
+				font-size: 18px;}	
+			input#male {
+				margin-left: 90px;}			
+			span#male {
+				font-size: 18px;
+				position: absolute;
+				margin-top: 21px;
+				margin-left: 5px;}
+			p#main_p {
+				font-size: 11px;
+				color: #66666e;}
+			.auxilary_links {
+				color: #2b5ba8;
+				text-decoration: none;}
+			.auxilary_links:hover {
+				text-decoration: underline;}
+			input#submit_button {
+				width: 210px;
+				background-color: #64a651;
+				color: #ffffff;
+				font-weight: bold;}
+			hr {
+				margin-top: 17px;
+				border-top: 1px solid #d9d9db;}
+			p#special_sign_in_p {
+				font-size: 13px;
+				font-weight: bold;
+				color: #66666e;}
+			p#special_sign_in_p a {
+				text-decoration: none;
+				color: #525899;
+				margin-right: 5px;}
+			p#special_sign_in_p a:hover {
+				text-decoration: underline;}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="header_child">
+				<div class="facebook">
+					<a id="facebook" href="" target="_self">facebook</a>
+				</div>
+				<div class="logindiv">
+					<form id="log_in" action="" method="post">
+						<label for="email_or_phone">Email or Phone</label>
+						<label id="ps" for="password">Password</label><br>
+						<input class="log_in" "type="email/tel" required name="email/phone" id="email_or_phone">
+						<input class="log_in" type="password" required name="password" id="password">
+						<input id="submit" type="submit" name="log_in" value="Log In"><br>
+						<a id="forgot_account" href="" target="_self">Forgot account?</a>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="main">
+
+			<div class="introduction">
+				<h2>Connect with friends and the<br> world around you on Facebook</h2>
+				<div class="intro" id="first">
+					<img class="logo" src="https://fb-s-d-a.akamaihd.net/h-ak-xft1/v/t39.2365-6/851565_602269956474188_918638970_n.png?oh=5606ed815f6beb3f9d7d35721a9dbb46&oe=599973F5&__gda__=1503310098_e1de3ce74d491a8f52fb37b758355c9b" alt>
+					<p id="first_p" class="intro_text" ><span class="bold" >See photos and updates</span><span class="normal">from friends in News Feed.</span></p>
+				</div>
+				<div class="intro" id="second">
+					<img class="logo" src="https://fb-s-c-a.akamaihd.net/h-ak-xaf1/v/t39.2365-6/851585_216271631855613_2121533625_n.png?oh=d57a82b1b4345fdcf2d9c0debf783dc0&oe=5950DE20&__gda__=1502374408_d6de325eee2abc3afbd422780c8f4acc" alt>
+					<p id="second_p" class="intro_text"><span class="bold">Share what's new</span><span class="normal"> in your life on your Timeline.</span></p>
+				</div>
+				<div class="intro" id="third">
+					<img class="logo" src="https://fb-s-b-a.akamaihd.net/h-ak-xft1/v/t39.2365-6/851558_160351450817973_1678868765_n.png?oh=8de3304d724a879592bcc3fe9f967dcd&oe=5959B4D8&__gda__=1502562870_d4c6c087bbae2845387b6b86c5199604" alt>
+					<p class="intro_text"><span id="third_bold" class="bold">Find more</span><span class="normal"> of what you're looking for with Facebook Search.</span></p>
+				</div>
+			</div>
+
+
+			<div id="sign_up_div">
+				<h1>Sign Up</h1>
+				<span id="free">It's free and always will be.</span>
+				<form action="" method="post">
+					<input class="input_name" type="text" name="first_name" placeholder="First name" required>
+					<input class="input_name" id="last_name" type="text" name="last_name" placeholder="Last name" required>
+					<input class="input_mail_pw" type="text" name="email/tel" placeholder="Mobile number of email" required>
+					<input class="input_mail_pw" type="password" name="password" placeholder="New password" required>
+					<p id="birthday">Birthday</p>					
+					<select id="month" name="Month"  required>
+						<option value="">Month</option>						
+						<option value="January">January</option>
+						<option value="February">February</option>
+						<option value="March">March</option>
+						<option value="April">April</option>
+						<option value="May">May</option>
+						<option value="June">June</option>
+						<option value="July">July</option>
+						<option value="August">August</option>
+						<option value="September">September</option>
+						<option value="October">October</option>
+						<option value="November">November</option>
+						<option value="December">December</option>
+					</select><!--
+				--><select id="day" name="day" required>
+						<option value="">Day</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+						<option value="24">24</option>
+						<option value="25">25</option>
+						<option value="26">26</option>
+						<option value="27">27</option>
+						<option value="28">28</option>
+						<option value="29">29</option>
+						<option value="30">30</option>
+						<option value="31">31</option>
+					</select><!--
+				--><select id="year" name="year" required>
+						<option value="">Year</option>
+						<option value="2017">2017</option>
+						<option value="2016">2016</option>
+						<option value="2015">2015</option>
+						<option value="2014">2014</option>
+						<option value="2013">2013</option>
+						<option value="2012">2012</option>
+						<option value="2011">2011</option>
+						<option value="2010">2010</option>
+						<option value="2009">2009</option>
+						<option value="2008">2008</option>
+						<option value="2007">2007</option>
+						<option value="2006">2006</option>
+						<option value="2005">2005</option>
+						<option value="2004">2004</option>
+						<option value="2003">2003</option>
+						<option value="2002">2002</option>
+						<option value="2001">2001</option>
+						<option value="2000">2000</option>
+						<option value="1999">1999</option>
+						<option value="1998">1998</option>
+						<option value="1997">1997</option>
+						<option value="1996">1996</option>
+						<option value="1995">1995</option>
+						<option value="1994">1994</option>
+						<option value="1993">1993</option>
+						<option value="1992">1992</option>
+						<option value="1991">1991</option>
+						<option value="1990">1990</option>
+						<option value="1989">1989</option>
+					</select>
+					<div id="link_div">
+						<a href="" target="_self">Why do I need to provide my<br> birthday?</a>
+					</div>
+					<input class="radio" type="radio" name="gender" value="female" id="female" required><span id="female">Female</span>
+					<input class="radio" type="radio" name="gender" value="male" id="male"><span id="male">Male</span>
+					<p id="main_p">By clicking Create Account, you agree to our <a class="auxilary_links" href="" target="_blank">Terms</a> and that you <br>have read our <a class="auxilary_links" href="" target="_blank">Data Policy</a>, including our <a class="auxilary_links" href="" target="_blank">Cookie Use</a>. You may <br>receive SMS notifications from Facebook and can opt out at any <br>time.</p>
+					<input id="submit_button" type="submit" value="Create Account">
+				</form>
+				<hr>
+				<p id="special_sign_in_p"><a href="" target="_self">Create a Page</a>for a celebrity, band or business.</p>
+			</div>
+		</div>
+	</body>
+</html>
